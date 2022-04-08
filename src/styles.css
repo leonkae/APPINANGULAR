@@ -3,20 +3,20 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 * {
-
+font-family: 'Poppins', sans-serif;
 box-sizing: border-box;
-
 margin: 0;
-
 padding: 0;
-
 }
 
 body {
-
-font-family: Arial, Helvetica, sans-serif;
-
+font-family: 'Poppins', sans-serif;
 line-height: 1.4;
-
+background-image: url(assets/istockphoto-1147326301-612x612.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
-
+.universal-container{
+    border: 3px solid red;
+    height: 120px;
+}

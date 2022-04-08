@@ -2,7 +2,14 @@ h6{
     color: red;
 }
 
+.container{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: black; */
+}
+
 .row{
     border: 3px solid red;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(127, 255, 212, 0.158);
 }
 
