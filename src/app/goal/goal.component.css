@@ -5,6 +5,10 @@ h6{
 .container{
     font-family: 'Poppins', sans-serif;
     /* background-color: black; */
+   
+}
+.container h1{
+    font-size: 50px;
 }
 
 .row{
@@ -12,4 +16,8 @@ h6{
     font-family: 'Poppins', sans-serif;
     background-color: rgba(127, 255, 212, 0.158);
 }
+
+/* .footer{
+    border: 3px solid blue;
+} */
 

@@ -12,11 +12,17 @@ padding: 0;
 body {
 font-family: 'Poppins', sans-serif;
 line-height: 1.4;
-background-image: url(assets/istockphoto-1147326301-612x612.jpg);
+/* background-image: url(assets/istockphoto-1147326301-612x612.jpg);
 background-repeat: no-repeat;
-background-size: cover;
+background-size: cover; */
 }
 .universal-container{
     border: 3px solid red;
     height: 120px;
+}
+
+.footer{
+    border: 3px solid red;
+    margin-top: 30px;
+    height: 231px;
 }
