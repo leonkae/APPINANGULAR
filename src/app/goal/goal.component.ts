@@ -7,30 +7,20 @@ import { Goal } from '../goal';
   styleUrls: ['./goal.component.css'],
 })
 export class GoalComponent implements OnInit {
-  // UpVote: number = 0;
-  // DownVote: number = 0;
-  totalVote:number = 0;
-
   goals: Goal[] = [
     new Goal(
       1,
       'Andre KAE',
       'its in life that you find the true meaning of death',
       'leonake',
-      new Date(2022, 4, 7),
-      0,
-      0,
-      0
+      new Date(2022, 4, 7)
     ),
     new Goal(
       2,
       'Bruv Dat',
       'The message is loud and clear Oreos are the shit',
       'Oreo King',
-      new Date(2022, 4, 8),
-      0,
-      0,
-      0
+      new Date(2022, 4, 8)
     ),
   ];
 
@@ -41,17 +31,16 @@ export class GoalComponent implements OnInit {
   }
 
   // serves as Upvote.
-  goalupVote(isComplete: any, index: number) {
+  completeGoal(isComplete: any, index: number) {
     if (isComplete) {
-      // this.goals.splice(index, 1+);
-      this.totalVote++
+      this.goals.splice(index, 1);
     }
   }
 
   // serves to downVote.
-  goalDownVote(isComplete: any, index: number) {
-    if (isComplete) {
-      this.goals.splice(index, 1);
+  goalDownVote(isComplete:any, index:number){
+    if(isComplete){
+      this.goals.splice(index,1)
     }
   }
 
@@ -80,3 +69,4 @@ export class GoalComponent implements OnInit {
 
   ngOnInit() {}
 }
+

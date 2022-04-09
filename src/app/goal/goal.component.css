@@ -1,4 +1,6 @@
-
+h6{
+    color: red;
+}
 
 .container{
     font-family: 'Poppins', sans-serif;
@@ -8,15 +10,11 @@
 .container h1{
     font-size: 50px;
 }
-.container p{
-    font-size: 20px;
-    text-align: center;
-}
 
 .row{
     /* border: 3px solid red; */
     font-family: 'Poppins', sans-serif;
-    background-color:  #636b651f
+    background-color: rgba(127, 255, 212, 0.158);
 }
 
 /* .footer{
