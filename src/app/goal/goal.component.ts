@@ -15,20 +15,36 @@ export class GoalComponent implements OnInit {
       'leonake',
       new Date(2022, 4, 7)
     ),
-    new Goal(2, 'Bruv Dat', 'The message is loud and clear Oreos are the shit', 'Oreo King', new Date(2022, 4, 8)),
-   
+    new Goal(
+      2,
+      'Bruv Dat',
+      'The message is loud and clear Oreos are the shit',
+      'Oreo King',
+      new Date(2022, 4, 8)
+    ),
   ];
+
+  // serves as click to vote
 
   toggleDetails(index: number) {
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
 
+  // serves as Upvote.
   completeGoal(isComplete: any, index: number) {
     if (isComplete) {
       this.goals.splice(index, 1);
     }
   }
 
+  // serves to downVote.
+  goalDownVote(isComplete:any, index:number){
+    if(isComplete){
+      this.goals.splice(index,1)
+    }
+  }
+
+  // serves as delete Quote
   deleteGoal(isComplete: any, index: number) {
     if (isComplete) {
       let toDelete = confirm(
@@ -41,6 +57,7 @@ export class GoalComponent implements OnInit {
     }
   }
 
+  // now serves as add new quote
   addNewGoal(goal: any) {
     let goalLength = this.goals.length;
     goal.id = goalLength + 1;

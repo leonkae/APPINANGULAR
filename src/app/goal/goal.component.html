@@ -1,7 +1,5 @@
-
-
-<div class="container" style="margin-top: 40px;">
-  <h1 style="color: dodgerblue; text-align:center;">QUATER</h1>
+<div class="container" style="margin-top: 40px">
+  <h1 style="color: dodgerblue; text-align: center">QUATER</h1>
   <hr />
 
   <div class="row">
@@ -9,9 +7,10 @@
       <div *ngFor="let goal of goals; let i = index">
         <div>
           <h4 id="{{ i }}" appStrikethrough>
-            {{ goal.name }} {{ goal.author }} due on
+            {{ goal.name }}, {{ goal.author }}, Date Created:
             {{ goal.completeDate | date | uppercase }}
           </h4>
+
           <button (click)="toggleDetails(i)" class="btn btn-primary">
             click to vote
           </button>
@@ -32,6 +31,4 @@
 
     <!-- <p *ngIf='goals.length > 5'>You have too many goals</p> -->
   </div>
-
-  
 </div>
