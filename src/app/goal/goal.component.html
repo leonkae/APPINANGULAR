@@ -1,5 +1,6 @@
 <div class="container" style="margin-top: 40px">
   <h1 style="color: dodgerblue; text-align: center">QUATER</h1>
+  <p>"Heard Quote today?...tell us."</p>
   <hr />
 
   <div class="row">
@@ -11,9 +12,15 @@
             {{ goal.completeDate | date | uppercase }}
           </h4>
 
+          <h5>Votes: <span>{{goal.upVote+goal.downVote}}</span> </h5>
+          <h5>upVote: <span>{{goal.upVote}}</span>
+          </h5>
+          <h5>downVote: <span>{{goal.downVote}}</span> </h5>
+
           <button (click)="toggleDetails(i)" class="btn btn-primary">
             click to vote
           </button>
+          
         </div>
 
         <div *ngIf="goal.showDescription">

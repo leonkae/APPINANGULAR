@@ -18,13 +18,10 @@ background-size: cover;
 
 }
 .universal-container{
-    border: 3px solid red;
-    height: 120px; 
-    /* background-color: #636b65;*/
+    height: 83px; 
 }
 
 .footer{
-    /* border: 3px solid red; */
     margin-top: 30px;
     height: 231px;
 }

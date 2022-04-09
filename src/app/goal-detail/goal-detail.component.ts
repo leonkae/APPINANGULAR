@@ -10,15 +10,23 @@ export class GoalDetailComponent implements OnInit {
   @Input() goal: Goal;
   @Output() isComplete = new EventEmitter <boolean>();
 
-  goalComplete(complete:boolean){
-    this.isComplete.emit(complete);
+  goalupVote(goal:Goal){
+    // this.isComplete.emit(complete);
+    goal.votes++
+    goal.upVote++
   }
 
   goalDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  goalDownVote(complete:boolean){
-    this.isComplete.emit(complete);
+  goalDownVote(goal:Goal){
+    // this.isComplete.emit(complete);
+    if(goal.votes <= 0){
+       goal.votes = 0;
+    }else{goal.votes--;}
+    
+    goal.downVote ++
+    
   }
 
 
