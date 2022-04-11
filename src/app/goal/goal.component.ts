@@ -7,8 +7,8 @@ import { Goal } from '../goal';
   styleUrls: ['./goal.component.css'],
 })
 export class GoalComponent implements OnInit {
-  // UpVote: number = 0;
-  // DownVote: number = 0;
+
+
   totalVote:number = 0;
 
   goals: Goal[] = [
