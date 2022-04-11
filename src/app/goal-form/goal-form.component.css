@@ -1,3 +1,13 @@
 /* .form-group{
     background-color: tomato;
 } */
+
+.form-group{
+    color: white;
+    font-size: larger;
+}
+
+.form-control{
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
+}

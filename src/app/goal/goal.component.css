@@ -2,7 +2,6 @@
 
 .container{
     font-family: 'Poppins', sans-serif;
-    /* background-color: black; */
    
 }
 .container h1{
@@ -14,12 +13,8 @@
 }
 
 .row{
-    /* border: 3px solid red; */
     font-family: 'Poppins', sans-serif;
     background-color:  #636b651f
 }
 
-/* .footer{
-    border: 3px solid blue;
-} */
 
