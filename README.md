@@ -1,3 +1,19 @@
+# QUATER
+# AUTHOR
+ANDRE LEON KAEULANA
+
+# DESCIPTION
+This app is designed to allow users post quotes and choose to up Vote then or down vote them.
+
+# SET UP AND USAGE
+![navigation](assets/../src/assets/this%20for%20appinangular11.jpg)
+above is the landing page.
+
+# COPYRIGHT AND LICENSE
+
+
+
+
 # APPINANGULAR
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
